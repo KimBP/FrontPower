@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "FrontPower-rescue")(type "Legacy")(uri "${KIPRJMOD}/FrontPower-rescue.lib")(options "")(descr ""))
+  (lib (name "motor_anchor")(type "Legacy")(uri "${KIPRJMOD}/motor_anchor.lib")(options "")(descr ""))
+  (lib (name "motor_thruster")(type "Legacy")(uri "${KIPRJMOD}/motor_thruster.lib")(options "")(descr ""))
+)
