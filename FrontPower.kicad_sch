@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Frk Jensen - Anchor/Thruster Schematic")
-		(date "2023-08-07")
-		(rev "2.0")
+		(date "2025-06-08")
+		(rev "v2.1")
 	)
 	(lib_symbols
 		(symbol "Converter_DCDC:ITX0505SA"
@@ -2336,6 +2336,174 @@
 				)
 			)
 		)
+		(symbol "power:GNDPWR"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GNDPWR"
+				(at 0 -3.302 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GNDPWR_0_1"
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -1.27) (xy -1.27 -2.032) (xy -1.27 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -1.27) (xy -0.762 -2.032) (xy -0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy -0.254 -2.032) (xy -0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.27) (xy 0.254 -2.032) (xy 0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy -1.016 -1.27) (xy -1.016 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy 0.762 -2.032) (xy 0.762 -2.032) (xy 0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GNDPWR_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GNDREF"
 			(power)
 			(pin_names
@@ -2518,10 +2686,22 @@
 		(uuid "88ab13ca-2a94-480c-930a-7d773021a5bf")
 	)
 	(junction
+		(at 35.56 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "938acd9d-071f-46fe-b2a0-966795b1f721")
+	)
+	(junction
 		(at 245.11 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "93bd4d63-e9b1-41bf-b173-c5ebf98e030c")
+	)
+	(junction
+		(at 137.16 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9cbcd45c-85b1-43f7-9893-e36c0e9c0cd2")
 	)
 	(junction
 		(at 147.32 48.26)
@@ -2882,6 +3062,17 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 33.02) (xy 104.14 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "39e77cd9-40bf-4397-a1f8-fa349ab8650d")
+	)
+	(wire
+		(pts
 			(xy 215.9 77.47) (xy 215.9 72.39)
 		)
 		(stroke
@@ -2922,7 +3113,7 @@
 	)
 	(polyline
 		(pts
-			(xy 110.49 93.98) (xy 93.98 93.98)
+			(xy 111.506 84.582) (xy 85.344 84.582)
 		)
 		(stroke
 			(width 0)
@@ -3066,7 +3257,7 @@
 	)
 	(polyline
 		(pts
-			(xy 110.49 160.02) (xy 110.49 93.98)
+			(xy 110.49 160.02) (xy 110.49 84.836)
 		)
 		(stroke
 			(width 0)
@@ -3086,7 +3277,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 33.02) (xy 104.14 33.02)
+			(xy 57.15 33.02) (xy 90.17 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3320,6 +3511,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 43.18) (xy 35.56 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9abb16d-bba3-4587-aae3-381c2c6feca6")
+	)
+	(wire
+		(pts
 			(xy 222.25 96.52) (xy 260.35 96.52)
 		)
 		(stroke
@@ -3351,7 +3552,7 @@
 	)
 	(polyline
 		(pts
-			(xy 93.98 93.98) (xy 93.98 17.78)
+			(xy 85.344 84.582) (xy 85.344 16.764)
 		)
 		(stroke
 			(width 0)
@@ -3391,7 +3592,7 @@
 	)
 	(polyline
 		(pts
-			(xy 93.98 17.78) (xy 283.21 17.78)
+			(xy 84.328 16.764) (xy 283.21 16.764)
 		)
 		(stroke
 			(width 0)
@@ -3480,6 +3681,16 @@
 			(type dash)
 		)
 		(uuid "e1258c1e-cd8e-4180-8e20-94a6eb7e54f5")
+	)
+	(wire
+		(pts
+			(xy 137.16 25.4) (xy 137.16 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e271144b-5013-4154-a9f3-e4af61bafd42")
 	)
 	(wire
 		(pts
@@ -3736,16 +3947,6 @@
 		)
 		(uuid "38266964-754a-4c38-9853-5a8b5691427d")
 	)
-	(label "Consume 12V"
-		(at 176.53 76.2 180)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right bottom)
-		)
-		(uuid "3b6b5552-b3db-4b04-a81a-614fb30ae649")
-	)
 	(label "50mm2 Sort"
 		(at 255.27 138.43 0)
 		(effects
@@ -3777,7 +3978,7 @@
 		(uuid "606ab357-d9c2-4864-91b0-c5103cb606c3")
 	)
 	(label "Consume 12V"
-		(at 80.01 100.33 180)
+		(at 77.47 100.33 180)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -3786,8 +3987,18 @@
 		)
 		(uuid "7d84d635-062f-4481-8e4d-890ab18aaa6e")
 	)
-	(label "Consume 12V"
-		(at 210.82 43.18 180)
+	(label "THRUSTER_12V"
+		(at 175.26 76.2 180)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "94979b1f-245b-4551-8db7-55a97bd5ad94")
+	)
+	(label "THRUSTER_12V"
+		(at 209.55 43.18 180)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -3815,6 +4026,16 @@
 			(justify right bottom)
 		)
 		(uuid "e567cea5-b87a-40e9-9ac2-56d54ebdc1e6")
+	)
+	(label "THRUSTER_12V"
+		(at 156.21 21.59 180)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "fd1f83ee-9df4-4516-a78f-86a7cea69892")
 	)
 	(symbol
 		(lib_id "FrontPower-rescue:FINDER-32.21-x300")
@@ -3988,7 +4209,7 @@
 			)
 		)
 		(property "Value" "Bat. Thruster"
-			(at 140.97 24.13 0)
+			(at 143.002 32.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4986,6 +5207,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+VDC")
+		(at 137.16 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2af92984-b528-4832-8941-efb0ec409ab0")
+		(property "Reference" "THRUSTER_12V"
+			(at 137.16 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+VDC"
+			(at 137.16 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2bf7157-a38c-4f69-b7f2-b5b649b90618")
+		)
+		(instances
+			(project "FrontPower"
+				(path "/29e78086-2175-405e-9ba3-c48766d2f50c"
+					(reference "THRUSTER_12V")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND2")
 		(at 245.11 118.11 0)
 		(unit 1)
@@ -5059,7 +5347,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "55be46ab-7e52-437c-afbb-a5de0718bdeb")
 		(property "Reference" "#PWR?"
 			(at 203.2 146.05 0)
@@ -5070,12 +5357,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GNDREF"
-			(at 203.2 144.78 0)
+		(property "Value" "CONSUME_GND"
+			(at 196.342 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5125,7 +5413,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6c6d343a-a92e-44d9-9f61-67a8f5f0974a")
 		(property "Reference" "#PWR?"
 			(at 72.39 134.62 0)
@@ -5136,12 +5423,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GNDREF"
-			(at 72.39 133.35 0)
+		(property "Value" "CONSUME_GND"
+			(at 64.77 133.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5250,6 +5538,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDPWR")
+		(at 35.56 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7dd15a01-510a-4920-870d-4fa55c323d0a")
+		(property "Reference" "#PWR1"
+			(at 35.56 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "MOTOR_GND"
+			(at 35.433 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 35.56 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "048d7ada-f4a3-4e28-9807-4f3d17459ffe")
+		)
+		(instances
+			(project ""
+				(path "/29e78086-2175-405e-9ba3-c48766d2f50c"
+					(reference "#PWR1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_DP3T")
 		(at 96.52 129.54 270)
 		(unit 2)
@@ -5338,6 +5692,74 @@
 		)
 	)
 	(symbol
+		(lib_id "FrontPower-rescue:Fuse")
+		(at 93.98 33.02 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "89def224-8de9-4d39-9d22-8184bde9a8d7")
+		(property "Reference" "F1"
+			(at 93.98 30.988 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "50A"
+			(at 93.98 34.925 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 34.798 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff9ce7f4-b6b9-479c-b5f7-d23fbac59777")
+		)
+		(pin "2"
+			(uuid "f359cff0-b51d-4484-9578-94f79c7f1a1b")
+		)
+		(instances
+			(project "FrontPower"
+				(path "/29e78086-2175-405e-9ba3-c48766d2f50c"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+VDC")
 		(at 168.91 82.55 0)
 		(unit 1)
@@ -5412,7 +5834,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a3d06312-8219-494e-9c02-01c5712361e6")
 		(property "Reference" "#PWR?"
 			(at 168.91 127 0)
@@ -5423,12 +5844,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GNDREF"
-			(at 168.91 125.73 0)
+		(property "Value" "CONSUME_GND"
+			(at 161.798 127.254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
